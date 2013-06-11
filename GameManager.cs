@@ -61,12 +61,14 @@ public class GameManager : MonoBehaviour {
 	//}
 	}
 	
+	//combo 이미지 입력
 	public void ComboTextCheck() {
 		ComboText.guiText.text = Combo.ComboNum + "";
 		AccTime = 0;
 		
 	}
 	
+	//보트 선택
 	void BoatChoice() {
 		switch(BoatNum) {
 		case 1:
