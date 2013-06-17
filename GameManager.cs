@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		AccTime += Time.deltaTime;
+		
+		//combo text를 AccTime 에 의하여 on,off
 		if(AccTime > Delay)	{
 			ComboText.guiText.enabled = false;
 			ComboTexture.guiTexture.enabled = false;
