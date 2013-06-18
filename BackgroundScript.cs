@@ -9,6 +9,7 @@ public class BackgroundScript : MonoBehaviour {
 	{
 		//Make it smooth
 
+	//강이 흘러가는 속도
         float offset = Time.time * scrollSpeed;
 		
 		//Set the texture offset
