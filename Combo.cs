@@ -58,7 +58,9 @@ public class Combo : MonoBehaviour {
 		
 	}
 	
+	//Combo text 생성, 각 boat 점수 부여
 	void ComboCheck () {
+		
 		if(ComboNum %7 == BlockNum) {
 			ComboNum ++;
 			GameObject.Find("Main Camera").GetComponent<GameManager>().ComboTextCheck();
@@ -86,11 +88,8 @@ public class Combo : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-      
 	
-}
+	//BadItem 습득 시 BadState
 	IEnumerator badstate() {
 		Move.BadMove = true;
 		yield return new WaitForSeconds(5f);
@@ -98,6 +97,7 @@ public class Combo : MonoBehaviour {
 		
 	}
 	
+	//GoodItem 습득 시 GoodState
 	IEnumerator goodstate() {
 		Make2.GoodItm = true;
 		yield return new WaitForSeconds(10f);
