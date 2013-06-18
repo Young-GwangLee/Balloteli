@@ -43,11 +43,7 @@ public class Make2 : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	
+	//객체 생성
 	public void NextMake() {
 		if(canMake) {
 			for(int i=0; i<5; i++) {
