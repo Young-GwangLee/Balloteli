@@ -76,6 +76,8 @@ public class StageManager : MonoBehaviour {
 	}
 	
 	
+	//GameOver Gui 띄우기 시간 설정
+
 	IEnumerator TrueCanClick() {
 		yield return new WaitForSeconds(0.00025f);
 		CanClick = true;
