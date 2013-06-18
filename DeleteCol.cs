@@ -4,7 +4,8 @@ using System.Collections;
 public class DeleteCol : MonoBehaviour {
   
 	public bool MakeBool;
-
+	
+	//
 	void OnTriggerEnter(Collider col) {
 		if(MakeBool == true) {	
 			MakeBool = false;
